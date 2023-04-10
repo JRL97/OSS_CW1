@@ -14,7 +14,7 @@
 </form>
 
 <?php
-    if(isset($_POST[note]))
+    if(isset($_POST['note']))
     {
        // Substitute your login in place of "yourLogin"
        $fp = fopen("yourLogin.txt","a");
