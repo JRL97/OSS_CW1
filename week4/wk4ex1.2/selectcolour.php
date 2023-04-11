@@ -3,9 +3,9 @@
     <body>
       <?php
       $cookiename = 'qty';
-      setcookie($cookienmae, $_POST['selqty']);
+      setcookie($cookiename, $_POST['selqty']);
       ?>
-      
+
       <form action="confirmation.php"  method="post">
 	Select the colour for the <?php echo $_POST[selqty] ?> widgets you are ordering
    	<select name="selcolour">
