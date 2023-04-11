@@ -6,6 +6,6 @@
 	$jessica->set_name("Jessica Leach");
 	$jimmy->set_name("Nick Waddles");
  
-	echo "Jessica's full name: " . $jessica->get_name()</br>;
+	echo "Jessica's full name: " . $jessica->get_name();
 	echo "Nick's full name: " . $jimmy->get_name(); 
 ?>
