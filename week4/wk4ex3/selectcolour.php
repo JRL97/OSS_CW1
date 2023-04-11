@@ -3,6 +3,7 @@
     <body>
       <?php
       session_start();
+      $_SESSION['size'] = $_POST['size'];
       $_SESSION['qty'] = $_POST['selqty'];
       ?>
       <form action="confirmation.php"  method="post">
