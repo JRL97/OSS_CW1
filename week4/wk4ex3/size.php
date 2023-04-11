@@ -3,11 +3,11 @@
         <body>
             <?php 
             session_start();
-            $_SESSION['selqty'] = $_POST['selqty'];
+            $_SESSION['qty'] = $_POST['selqty'];
             ?>
             <form action="selectcolour.php" method="post">
                 Select the size for the <?php echo $_POST["selqty"] ?> widgets you are ordering
-                <select name="selsize">
+                <select name="size">
                     <option>Small</option>
                     <option>Medium</option>
                     <option>Large</option>
