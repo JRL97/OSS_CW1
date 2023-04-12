@@ -12,11 +12,10 @@
 	
 	// Execute sql statement
 	
-    $result = $mysqli -> query($sql);
+    $result = $mysqli->query($sql);
 
 	while ($row = mysqli_fetch_assoc($result))
 	{
 		echo "$row[name]  $row[email]  $row[phone_number] <br/>";
 	}
 ?>
-
