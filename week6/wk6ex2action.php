@@ -13,13 +13,13 @@
 <form action=" " method="post">
 
 	Name :
-	<input type=text name=txtname value="<?php echo $row[name] ?>" readonly />
+	<input type=text name=txtname value="<?php echo $row["name"] ?>" readonly />
 	</br>
 	Phone number :
-	<input type=text name=txttelno value="<?php echo $row[phone_number] ?>" />
+	<input type=text name=txttelno value="<?php echo $row["phone_number"] ?>" />
 	</br>
 	Email :
-	<input type=text name=txtemail value="<?php echo $row[email] ?>" />
+	<input type=text name=txtemail value="<?php echo $row["email"] ?>" />
 	</br>
 	<input type=submit name=btnsubmit value="save"/>
 </form>
