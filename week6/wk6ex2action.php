@@ -1,5 +1,8 @@
 <?php	
 
+session_start();
+	$_SESSION['id'] = $_GET['id'];
+
 	// Connect to server and select database
     $mysqli = new mysqli('localhost','root','','db1_jess');
 
@@ -10,7 +13,7 @@
 ?>
 <html>
 <body>
-<form action="wk6ex3.php?id=?php echo $_GET[id]; ?> " method="post">
+<form action="wk6ex3.php" method="post">
 
 	Name :
 	<input type=text name=txtname value="<?php echo $row["name"] ?>" />
