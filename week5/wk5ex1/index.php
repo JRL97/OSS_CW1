@@ -7,5 +7,6 @@
 	$jimmy->set_name("Nick Waddles");
  
 	echo "Jessica's full name: " . $jessica->get_name();
+    <br></br>
 	echo "Jimmy's full name: " . $jimmy->get_name(); 
 ?>
