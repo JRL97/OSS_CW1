@@ -21,9 +21,9 @@ function html_footer()
 	echo "</html>";
 }
 
-function calculatetax($salary, $rate=40)
+function calculatetax($salary, $rate=40, $taxAllowance)
 {
-	$tax = ($salary * ($rate/100));
+	$tax = ($salary - $taxAllowance) * ($rate/100);
 	return $tax;
 }
 
