@@ -1,6 +1,6 @@
 <?php
 
-  header("Content-Type: image/jpeg");
+  header("Content-type: image/jpeg");
 
   $conn = mysqli_connect("localhost", "22133230", "mysqluser", "db3_22133230");
 
@@ -10,7 +10,7 @@
   $result = mysqli_query($conn, $sql);
   $row = mysqli_fetch_array($result);
   
-  $jpg = $row["Image"];
+  $jpg = $row["image"];
 
   echo $jpg;
 ?>
