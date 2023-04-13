@@ -38,8 +38,8 @@
  Monster Sound :
  <input  type="file" name="monsteraudio" accept="audio/basic" class="form-control"  />
  </br></br>
- <input type="submit" class="btn btn-default" value="Save" />
- <input type=submit formaction="displaymonster.php" name=btnsubmit value="exit"/>
+ <input type="submit" class="btn btn-default" name=btnsubmit value="Save" />
+ <input type=submit formaction="displaymonster.php" name=btnexit value="exit"/>
 </form>
 </br>
 <?php 
