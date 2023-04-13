@@ -1,6 +1,6 @@
 <?php
 
-  header("Content-type: image/jpeg");
+  header("Content-Type: image/jpeg");
 
   $conn = mysqli_connect("localhost", "22133230","mysqluser", "db3_22133230 ");
 
