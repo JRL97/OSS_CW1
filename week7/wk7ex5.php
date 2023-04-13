@@ -5,7 +5,7 @@
 
 <?php
     
-    if($_POST['btnSubmit'])
+    if($_POST['txtname'])
     {
         $db = mysqli_connect("localhost", "22133230", "mysqluser", "db3_22133230");
         
