@@ -4,11 +4,24 @@
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
 
 <?php
-    require"myfunctions.inc";
-
+    
     if($_POST['btnSubmit'])
     {
-       save_monster();
+        $db = mysqli_connect("localhost", "22133230", "mysqluser", "db3_22133230");
+        
+        // Obtain the file sent to the server within the response.
+        $image = $_FILES['monsterimage']['tmp_name']; 
+        $audio = $_FILES['monsteraudio']['tmp_name'];
+        
+          // Get the file binary data
+          $imagedata = addslashes(fread(fopen($image, "r"), filesize($image)));
+          $audiodata = addslashes(fread(fopen($audio, "r"), filesize($audio)));
+           
+          $sql = "INSERT INTO monster (name, image, audio) VALUES ('$_POST[txtname]', '$imagedata','$audiodata');";
+        
+          $result = mysqli_query($db, $sql);
+        
+           mysqli_close();
     }
 ?>
 
@@ -26,9 +39,10 @@
  <input  type="file" name="monsteraudio" accept="audio/basic" class="form-control"  />
  </br></br>
  <input type="submit" class="btn btn-default" value="Save" />
+ <input type=submit formaction="displaymonster.php" name=btnsubmit value="exit"/>
 </form>
 </br>
-<?php display_Table();
+<?php 
 ?>
 </body>
 </html>
