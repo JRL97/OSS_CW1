@@ -2,7 +2,7 @@
 
 function save_monster()
 {
-    $db = mysqli_connect("localhost","22143664","mysqluser","db1_22143664");
+    $db = mysqli_connect("localhost", "22133230", "mysqluser", "db3_22133230");
 
     // Obtain the file sent to the server within the response.
     $image = $_FILES['monsterimage']['tmp_name']; 
@@ -19,7 +19,7 @@ function save_monster()
 
 function display_Table()
 {
-    $conn = mysqli_connect("localhost","22143664","mysqluser","db1_22143664");
+    $conn = mysqli_connect("localhost", "22133230", "mysqluser", "db3_22133230");
 
     $sql = "select id,name from monster;";
 
