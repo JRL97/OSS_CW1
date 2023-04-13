@@ -13,7 +13,7 @@ session_start();
 ?>
 <html>
 <body>
-<form action="wk6ex3.php" method="post">
+<form method="post">
 
 	Name :
 	<input type=text name=txtname value="<?php echo $row["name"] ?>" />
@@ -24,7 +24,8 @@ session_start();
 	Email :
 	<input type=text name=txtemail value="<?php echo $row["email"] ?>" />
 	</br>
-	<input type=submit name=btnsubmit value="save"/>
+	<input type=submit formaction="wk6ex3.php" name=btnsubmit value="save"/>
+	<input type=submit formaction="wk6ex4.php" name=btnsubmit value="delete"/>
 </form>
 </body>
 </html>
