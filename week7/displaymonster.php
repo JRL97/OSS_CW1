@@ -1,6 +1,6 @@
 <?php
   
-  $conn = mysqli_connect("localhost", "22133230","mysqluser", "db3_22133230");
+  $conn = mysqli_connect("localhost", "22133230", "mysqluser", "db3_22133230");
 
 $sql = "select id from monster;";
 
